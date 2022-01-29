@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="emyu-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtarray=device-widtarray, initial-scale=1.0">
+    <title>Soal No 1</title>
+    <p id="hsil"></p>
+</head>
+<body style="background-color: aqua;" >
+    <script>
+        // Variable
+    var emyu  = prompt("Masukan Nama Kota")
+    var array = [];
+    if(emyu){ //kondisi jika prompt di input dan klik ok
+        array.push(emyu); //push method untuk memasukan data prompt kedalam array
+        var emyu = prompt("Masukan Lagi : ");
+        if(emyu){
+            array.push(emyu);
+            var emyu = prompt("Masukan Lagi : ");
+            if(emyu){
+                array.push(emyu);
+                document.getElementById("hsil").innerHTML = "Hasil Inputan Anda : "+ array; //cetak hasil inputan prompt kedalam id hsil
+            }else{
+                document.getElementById("hsil").innerHTML = "Hasil Inputan Anda : "+ array;
+            }
+        }else{
+            document.getElementById("hsil").innerHTML = "Hasil Inputan Anda : "+ array;
+        }
+    }else{
+        document.getElementById("hsil").innerHTML = "Anda Belum Input Apa-Apa Silahkan Refresh";
+    }
+    </script>
+</body>
+</html>
